@@ -74,7 +74,7 @@ def chat():
             return True
         if not text:
             return False
-        if step == 1:
+        if step == 0:
             return bool(re.search(r'\d{1,3}', text))
         if step == 2:
             return any(g in text.lower() for g in ["masculino","femenino","m","f","hombre","mujer"])
